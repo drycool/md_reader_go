@@ -4,27 +4,29 @@
 *.dll
 *.so
 *.dylib
-md-reader
+bin/
+dist/
+
+# Project specific binaries
+MD Reader.exe
+md-reader-gui.exe
 md-reader.exe
 
-# Test binary
-*.test
+# Local compilers and distros (we installed these)
+go_dist/
+gcc_dist/
+go_download.zip
+gcc_download.zip
 
-# Go workspace
-go.work
-go.work.sum
+# Go dependencies
+vendor/
+go.sum
 
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-*~
-
-# OS
+# OS metadata
 .DS_Store
 Thumbs.db
 
-# Build artifacts
-/dist/
-/build/
+# IDEs
+.idea/
+.vscode/
+*.swp
